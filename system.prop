@@ -7,3 +7,8 @@ ro.qc.sdk.audio.fluencetype=fluence
 
 # Display
 ro.sf.lcd_density=320
+
+# Higher fling velocities to smooth scrolling
+# and provide better responsiveness
+ro.min.fling_velocity=140
+ro.max.fling_velocity=20000
