@@ -68,7 +68,7 @@ on property:sys.boot_completed=1
 
     # disable thermal core_control to update scaling_min_freq
     write /sys/module/msm_thermal/core_control/enabled 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 400000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 800000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     # enable thermal core_control now
     write /sys/module/msm_thermal/core_control/enabled 1
@@ -82,14 +82,10 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration 60000
     write /sys/devices/system/cpu/cpufreq/interactive/target_loads 80
 
-    write /sys/module/cpu_boost/parameters/boost_ms 20
-    write /sys/module/cpu_boost/parameters/sync_threshold 998400
-    write /sys/module/cpu_boost/parameters/input_boost_freq 1094400
-    write /sys/module/cpu_boost/parameters/input_boost_ms 40
     start batt_health
 
     write /sys/class/devfreq/1c00000.qcom,kgsl-3d0/governor "msm-adreno-tz"
     write /sys/class/devfreq/qcom,cpubw.30/governor "cpufreq"
 
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
-    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 49152
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
