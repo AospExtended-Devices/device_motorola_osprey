@@ -9,3 +9,6 @@ ro.qc.sdk.audio.fluencetype=fluence
 
 # Display
 ro.sf.lcd_density=320
+
+# Device
+ro.product.device=osprey
