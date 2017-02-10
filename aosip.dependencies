@@ -1,7 +1,7 @@
 [
   {
     "remote":      "github",
-    "repository":  "AOSiP-Devices/device_motorola_msm8916-common",
+    "repository":  "ishubhamsingh/device_motorola_msm8916-common",
     "target_path": "device/motorola/msm8916-common",
     "branch":      "n-mr1"
   },
@@ -13,7 +13,7 @@
   },
   {
     "remote":      "github",
-    "repository":  "desaishivam26/proprietary_vendor_motorola",
+    "repository":  "TheMuppets/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
     "branch":      "cm-14.1"
   },
