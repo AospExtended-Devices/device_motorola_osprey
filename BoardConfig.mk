@@ -29,6 +29,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_osprey
 
 # Kernel
 TARGET_KERNEL_CONFIG := osprey_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
 
 # Partitions
