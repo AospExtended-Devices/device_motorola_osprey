@@ -29,3 +29,6 @@ PRODUCT_NAME := aosp_osprey
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := osprey
+
+#Build Magisk
+DEFAULT_ROOT_METHOD := magisk
