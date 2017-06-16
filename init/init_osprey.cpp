@@ -176,9 +176,9 @@ void vendor_load_properties()
     sprintf(description, "osprey_retus-user 6.0 MPI24.65-25.1 1 release-keys");
     sprintf(fingerprint, "motorola/osprey_retus/osprey_umts:6.0/MPI24.65-25.1/1:user/release-keys");
 
-    property_set("ro.product.device", device);
-    property_set("ro.build.product", device);
-    property_set("ro.build.description", description);
-    property_set("ro.build.fingerprint", fingerprint);
+    property_override("ro.product.device", device);
+    property_override("ro.build.product", device);
+    property_override("ro.build.description", description);
+    property_override("ro.build.fingerprint", fingerprint);
     property_set("ro.mot.build.customerid", customerid);
 }
