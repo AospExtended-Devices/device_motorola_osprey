@@ -15,12 +15,11 @@
 
 $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 
+#Bootanimation res
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Inherit some common aosp stuff.
 $(call inherit-product, vendor/aosp/common.mk)
-
-# Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
