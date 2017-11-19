@@ -26,6 +26,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import init.safailnet.rc
+
 on boot
     # AK09912 driver parameter permissions
     chown system compass /sys/class/compass/akm09912/accel
