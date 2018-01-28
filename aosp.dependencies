@@ -5,9 +5,9 @@
   },
   {
     "remote":      "github",
-    "repository":  "desaishivam26/android_kernel_motorola_msm8916",
+    "repository":  "ishubhamsingh/android_kernel_motorola_msm8916",
     "target_path": "kernel/motorola/msm8916",
-    "branch":      "cm-14.1"
+    "branch":      "hx-n"
   },
   {
     "repository":  "proprietary_vendor_motorola",
