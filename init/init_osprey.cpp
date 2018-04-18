@@ -181,5 +181,6 @@ void vendor_load_properties()
     property_override("ro.build.product", device);
     property_override("ro.build.description", description);
     property_override("ro.build.fingerprint", fingerprint);
+    property_override("ro.vendor.build.fingerprint", fingerprint);
     property_set("ro.mot.build.customerid", customerid);
 }
