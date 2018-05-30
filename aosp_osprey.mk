@@ -28,3 +28,7 @@ PRODUCT_MODEL := MotoG3
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := osprey
+
+
+# Use Jelly
+TARGET_USE_JELLY := true
