@@ -33,7 +33,11 @@ PRODUCT_RELEASE_NAME := osprey
 # Use Jelly
 TARGET_USE_JELLY := true
 
+# Set this flag in build script
+ifeq ($(CURRENT_BUILD_TYPE), gapps)
 # Use Gapps
-#WITH_GAPPS := true
-#TARGET_GAPPS_ARCH := arm
-#IS_PHONE := true
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm
+IS_PHONE := true
+endif
